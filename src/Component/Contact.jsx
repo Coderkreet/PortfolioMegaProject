@@ -2,7 +2,14 @@ import React from 'react'
 import { FaEnvelope, FaPhone, FaSearchLocation } from 'react-icons/fa'
 import FooterSection from './FooterSection'
 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+
 const Contact = () => {
+ 
+
   return (
     <div>
       <section
@@ -209,10 +216,12 @@ const Contact = () => {
     </div>
   </div>
 </div>
+
 <FooterSection/>
 
     </div>
   )
 }
+
 
 export default Contact

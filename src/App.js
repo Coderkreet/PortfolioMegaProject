@@ -6,6 +6,15 @@ import "./App.css"
 import HeroSection from './Component/HeroSection';
 import { createBrowserRouter , RouterProvider } from 'react-router-dom';
 
+
+// css file 
+import "./Component/css/anitabs.css"
+import "./Component/css/style.css"
+import "./Component/css/color.css"
+import "./Component/css/responsive.css"
+import "./Component/css/nice-select.css"
+import "./Component/css/perfect-scrollbar.css"
+
 import About from './Component/page/About';
 import Services from './Component/page/Services';
 import Home_2 from './Component/page/Home_2';
@@ -19,6 +28,7 @@ import BlogDetails_2 from './Component/page/BlogDetails_2';
 import OurBlog from './Component/page/OurBlog';
 import PricingPlans from './Component/PricingPlans';
 import Contact from './Component/Contact';
+import Testimonials from './Component/Testimonials';
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -28,8 +38,12 @@ const App = () => {
       
     },
     {
+      path : "/test",
+      element : <Testimonials/>
+    },
+    {
       path :"/home_2",
-      element : <>   <Header/>  <Home_2/> </>
+      element : <>     <Home_2/> </>
     },
     {
       path :"/home_3",

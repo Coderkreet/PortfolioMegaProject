@@ -4,9 +4,420 @@ import REsumeSection from '../REsumeSection'
 import ServicesSection from '../ServicesSection'
 import About_Section from '../About_Section'
 
+// css file 
+import "../css/anitabs.css"
+import "../css/style.css"
+import "../css/color.css"
+import "../css/responsive.css"
+import "../css/nice-select.css"
+import "../css/perfect-scrollbar.css"
+import { FaBars, FaDownload } from 'react-icons/fa'
+
 const home_2 = () => {
   return (
     <div>
+<header className="two for" id="stickyHeader">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-xl-2">
+        <div className="logo-icon">
+          <a className="magic-hover magic-hover__square" href="index.html">
+            <img className="light" src="img/orix-logo.png" alt="logo" />
+            <img className="drak" src="img/black-logo.png" alt="logo" />
+          </a>
+          <a
+            href="javascript:void(0)"
+            className="bar-menu magic-hover magic-hover__square"
+          >
+            <i className="fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div className="col-xl-7">
+        <div className="menu-bar">
+          <nav>
+            <ul>
+              <li className="menu-item-has-children">
+                <a className="magic-hover magic-hover__square" href="#">
+                  Home
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="index.html"
+                    >
+                      Home 1
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="index-2.html"
+                    >
+                      Home 2{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="index-3.html"
+                    >
+                      Home 3{" "}
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  className="magic-hover magic-hover__square"
+                  href="services.html"
+                >
+                  services
+                </a>
+              </li>
+              <li className="menu-item-has-children">
+                <a className="magic-hover magic-hover__square" href="#">
+                  Portfolio
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="portfolio-details-1.html"
+                    >
+                      Portfolio 1
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="portfolio-details-2.html"
+                    >
+                      Portfolio 2
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="portfolio-details-3.html"
+                    >
+                      Portfolio 3
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="menu-item-has-children">
+                <a className="magic-hover magic-hover__square" href="#">
+                  Blog
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="blog-details-1.html"
+                    >
+                      Blog Details 1
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="blog-details-2.html"
+                    >
+                      Blog Details 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="menu-item-has-children">
+                <a className="magic-hover magic-hover__square" href="#">
+                  Pages
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="about.html"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="magic-hover magic-hover__square"
+                      href="404.html"
+                    >
+                      404
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  className="magic-hover magic-hover__square"
+                  href="contact.html"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div className="col-xl-3">
+        <div className="extras">
+          <a
+            href="javascript:void(0)"
+            className="bar-menu magic-hover magic-hover__square"
+          >
+            <i className="fa-solid fa-bars" ><FaBars/></i>
+          </a>
+          <a
+            href="pdf/orix.pdf"
+            className="magic-hover magic-hover__square button download  button--moema button--text-thick button--text-upper button--size-s"
+            target="_blank"
+          >
+            <i className="fa-solid fa-download" > <FaDownload/></i>
+            Download CV
+          </a>
+        </div>
+      </div>
+      <div className="menu-wrap">
+        <div className="menu-inner ps ps--active-x ps--active-y">
+          <span className="menu-cls-btn">
+            <i className="cls-leftright" />
+            <i className="cls-rightleft" />
+          </span>
+          <div className="contact-info">
+            <a className="magic-hover magic-hover__square" href="index.html">
+              <img src="img/black-logo.png" alt="logo" />
+            </a>
+            <h5>
+              I use animation as a third dimension by which to simplify
+              experiences and kuiding thro each and every interaction.
+            </h5>
+            <div className="e-mail">
+              <div className="icon-box">
+                <i className="fa-solid fa-envelope" />
+              </div>
+              <div>
+                <h6>Phone No</h6>
+                <a
+                  className="magic-hover magic-hover__square"
+                  href="mailto:username@domain.com"
+                >
+                  username@domain.com
+                </a>
+              </div>
+            </div>
+            <div className="e-mail">
+              <div className="icon-box">
+                <i className="fa-solid fa-phone" />
+              </div>
+              <div>
+                <h6>Email Address</h6>
+                <a
+                  className="magic-hover magic-hover__square"
+                  href="callto:+(123)4567890"
+                >
+                  +(123) 456 7890
+                </a>
+              </div>
+            </div>
+            <div className="e-mail">
+              <div className="icon-box">
+                <i className="fa-solid fa-location-dot" />
+              </div>
+              <div>
+                <h6>Location</h6>
+                <a
+                  className="magic-hover magic-hover__square"
+                  href="javascript:void(0)"
+                >
+                  Block Street No 2101 USA
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="mobile-nav" id="mobile-nav" style={{ display: "block" }}>
+    <div className="mobile-nav-img-data">
+      <a className="magic-hover magic-hover__square" href="index.html">
+        <img alt="logo" src="img/black-logo.png" />
+      </a>
+    </div>
+    <ul>
+      <li className="menu-item-has-children">
+        <a
+          className="magic-hover magic-hover__square"
+          href="JavaScript:void(0)"
+        >
+          <i className="icon-home" /> Home
+        </a>
+        <ul className="sub-menu">
+          <li>
+            <a className="magic-hover magic-hover__square" href="index.html">
+              Home 1
+            </a>
+          </li>
+          <li>
+            <a className="magic-hover magic-hover__square" href="index-2.html">
+              Home 2
+            </a>
+          </li>
+          <li>
+            <a className="magic-hover magic-hover__square" href="index-3.html">
+              Home 3
+            </a>
+          </li>
+          <li>
+            <a className="magic-hover magic-hover__square" href="index-4.html">
+              Home 4 ( Light )
+            </a>
+          </li>
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="index-4-dark.html"
+            >
+              Home 4 ( Dark )
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a className="magic-hover magic-hover__square" href="about.html">
+          <i className="icon-user" /> About
+        </a>
+      </li>
+      <li className="menu-item-has-children">
+        <a
+          className="magic-hover magic-hover__square"
+          href="JavaScript:void(0)"
+        >
+          <i className="icon-briefcase" /> Portfolio
+        </a>
+        <ul className="sub-menu">
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="portfolio-details-1.html"
+            >
+              Portfolio Details 1
+            </a>
+          </li>
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="portfolio-details-2.html"
+            >
+              Portfolio Details 2
+            </a>
+          </li>
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="portfolio-details-3.html"
+            >
+              Portfolio Details 3
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li className="menu-item-has-children">
+        <a
+          className="magic-hover magic-hover__square"
+          href="JavaScript:void(0)"
+        >
+          <i className="icon-layers" />
+          Blog
+        </a>
+        <ul className="sub-menu">
+          <li>
+            <a className="magic-hover magic-hover__square" href="our-blog.html">
+              Our Blog
+            </a>
+          </li>
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="blog-details-1.html"
+            >
+              Blog Details 1
+            </a>
+          </li>
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="blog-details-2.html"
+            >
+              Blog Details 2
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li className="menu-item-has-children">
+        <a
+          className="magic-hover magic-hover__square"
+          href="JavaScript:void(0)"
+        >
+          <i className="icon-folder" /> Pages
+        </a>
+        <ul className="sub-menu">
+          <li>
+            <a className="magic-hover magic-hover__square" href="services.html">
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="services-details.html"
+            >
+              Services Details
+            </a>
+          </li>
+          <li>
+            <a
+              className="magic-hover magic-hover__square"
+              href="pricing-plans.html"
+            >
+              Pricing Plans
+            </a>
+          </li>
+          <li>
+            <a className="magic-hover magic-hover__square" href="404.html">
+              404
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a className="magic-hover magic-hover__square" href="contact.html">
+          <i className="icon-envelope-open" /> Contact
+        </a>
+      </li>
+    </ul>
+    <a
+      className="magic-hover magic-hover__square"
+      href="JavaScript:void(0)"
+      id="res-cross"
+    />
+    <a
+      href="pdf/orix.pdf"
+      className="magic-hover magic-hover__square button download  button--moema button--text-thick button--text-upper button--size-s"
+      target="_blank"
+    >
+      <i className="fa-solid fa-download" />
+      Download CV
+    </a>
+  </div>
+</header>
+
 
 <>
   <section className="hero-section-two">
