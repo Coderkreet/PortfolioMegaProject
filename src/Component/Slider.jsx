@@ -10,12 +10,7 @@ import "./css/color.css"
 import "./css/responsive.css"
 import "./css/nice-select.css"
 import "./css/perfect-scrollbar.css"
-
-
-const testComp = () => {
-  
-
-
+const Slider = () => {
     const ArticalDetails = [
         {
             name: 'Rekob Ramya',
@@ -91,8 +86,8 @@ const testComp = () => {
                                     </div> :
                                     ArticalDetails.map(testiMonialDetail => {
                                         return (
-                                        
-                                          <div class="col-lg-12 item">
+                                            
+                                          <div class="col-lg-20 item" style={{width :"30rem"}}>
                                           <div class="to-present">
                                             <span>2016 to 2018</span>
                                             <h6>Graphic Designer</h6>
@@ -104,7 +99,6 @@ const testComp = () => {
                                             </div>
                                           </div>
                                         </div>
-
                                         )
                                     })
                             }
@@ -114,6 +108,6 @@ const testComp = () => {
             </div>
         </section>
     );
-};
+}
 
-export default testComp;
+export default Slider

@@ -16,6 +16,7 @@ import "./Component/css/nice-select.css"
 import "./Component/css/perfect-scrollbar.css"
 
 import About from './Component/page/About';
+import testComp from './Component/testComp'
 import Services from './Component/page/Services';
 import Home_2 from './Component/page/Home_2';
 import Home_3 from './Component/page/Home_3';
@@ -29,6 +30,10 @@ import OurBlog from './Component/page/OurBlog';
 import PricingPlans from './Component/PricingPlans';
 import Contact from './Component/Contact';
 import Testimonials from './Component/Testimonials';
+import Artical from './Component/Artical';
+import Slider from './Component/Slider';
+import HaderSecound from './Component/HaderSecound';
+import Home_4 from './Component/page/Home_4';
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -39,7 +44,7 @@ const App = () => {
     },
     {
       path : "/test",
-      element : <Testimonials/>
+      element : <HaderSecound/>
     },
     {
       path :"/home_2",
@@ -48,6 +53,10 @@ const App = () => {
     {
       path :"/home_3",
       element : <>   <Header/> <Home_3/>   </>
+    },
+    {
+      path :"/Home_4",
+      element : <>    <Home_4/>   </>
     },
     {
       path :"/Services",

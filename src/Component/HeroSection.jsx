@@ -15,6 +15,7 @@ import FooterSection from './FooterSection';
 import REsumeSection from './REsumeSection';
 import ServicesSection from './ServicesSection';
 import About_Section from './About_Section';
+import ProjectSection from './ProjectSection';
 // import { FaSpinner } from 'react-icons/fa';
 
 const HeroSection = () => {
@@ -122,46 +123,7 @@ const HeroSection = () => {
 <REsumeSection/>
 
     {/* project */}
-    <section className="my-project gap">
-      <Container>
-        <div className="hading" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
-          <img alt="dots" src={dots} />
-          <p>Collection of my project</p>
-          <h2>Work Showcase</h2>
-        </div>
-        <div className="portfolios">
-          <div className="filters portfolio-controllers-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
-            <div className="portfolio-controllers wow fadeLeft button-group js-radio-button-group" data-wow-duration="1s" data-wow-delay=".1s" data-filter-group="color">
-              <button type="button" className="magic-hover magic-hover__square button is-checked filter-btn active-work" data-filter="">Show All</button>
-              <button type="button" className="magic-hover magic-hover__square filter-btn" data-filter=".Design">Design</button>
-              <button type="button" className="magic-hover magic-hover__square filter-btn" data-filter=".Branding">Branding</button>
-              <button type="button" className="magic-hover magic-hover__square filter-btn" data-filter=".Development">Development</button>
-              <button type="button" className="magic-hover magic-hover__square filter-btn" data-filter=".UI-Design">UX/UI Design</button>
-            </div>
-          </div>
-
-          <Row className="grid align-items-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
-            <Col lg={4} className="UI-Design Branding">
-              <div className="portfolio-detail">
-                <div className="portfolio-img">
-                  <figure className="gap-img">
-                    <img className="one hove" alt="profile img" src="https://via.placeholder.com/250x250" />
-                    <div className="hover-data">
-                      <a className="magic-hover magic-hover__square" href="#">List of Brands</a>
-                      <p>Digital Web</p>
-                    </div>
-                  </figure>
-                </div>
-              </div>
-            </Col>
-            {/* Other Col components go here */}
-          </Row>
-        </div>
-        <div className="load-button">
-          <a href="#" className="magic-hover magic-hover__square button button--moema button--text-thick button--text-upper button--size-s"><i className="fa-solid fa-spinner"></i>  Load More</a>
-        </div>
-      </Container>
-    </section>
+<ProjectSection/>
 
     {/* satisfied */}
     <section className="satisfied gap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">

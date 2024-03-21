@@ -5,6 +5,7 @@ import FooterSection from './FooterSection'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Testimonials from './Testimonials';
 
 
 const Contact = () => {
@@ -180,42 +181,7 @@ const Contact = () => {
   </div>
 </section>
 
-<div className="clients-data">
-  <div className="container">
-    <div
-      className="row client-logo owl-carousel owl-theme"
-      data-aos="fade-up"
-      data-aos-delay={200}
-      data-aos-duration={300}
-    >
-      <div className="col-lg-3 item">
-        <div className="clients-color">
-          <img alt="clients" src="https://via.placeholder.com/278x128" />
-        </div>
-      </div>
-      <div className="col-lg-3 item">
-        <div className="clients-color">
-          <img alt="clients" src="https://via.placeholder.com/278x128" />
-        </div>
-      </div>
-      <div className="col-lg-3 item">
-        <div className="clients-color">
-          <img alt="clients" src="https://via.placeholder.com/278x128" />
-        </div>
-      </div>
-      <div className="col-lg-3 item">
-        <div className="clients-color">
-          <img alt="clients" src="https://via.placeholder.com/278x128" />
-        </div>
-      </div>
-      <div className="col-lg-3 item">
-        <div className="clients-color">
-          <img alt="clients" src="https://via.placeholder.com/278x128" />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<Testimonials/>
 
 <FooterSection/>
 

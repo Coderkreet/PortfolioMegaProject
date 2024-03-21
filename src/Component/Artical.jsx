@@ -12,7 +12,7 @@ import "./css/nice-select.css"
 import "./css/perfect-scrollbar.css"
 
 
-const testComp = () => {
+const Artical = () => {
   
 
 
@@ -92,18 +92,16 @@ const testComp = () => {
                                     ArticalDetails.map(testiMonialDetail => {
                                         return (
                                         
-                                          <div class="col-lg-12 item">
-                                          <div class="to-present">
-                                            <span>2016 to 2018</span>
-                                            <h6>Graphic Designer</h6>
-                                            <div class="envato-studio">
-                                              <h4>Envato Studio</h4>
-                                              <p>Lorem ipsum indolor st amet, cmetc ur
-                                                locing elit, sedi dinm indolo  sum ind ol
-                                                m indolor st amet, cmetcilmes.</p>
-                                            </div>
-                                          </div>
+                                        <div class="item zoom-slider-img" style={{width : "600px"}}>
+                                        <img src="https://cdn1.vectorstock.com/i/1000x1000/67/65/business-concept-background-article-writing-word-vector-38866765.jpg" alt="img" style={{width : "300px"}} />
+                                        <div class="zoom-slider-data" style={{height : "300px"}} >
+                                            <span>December 5, 2023</span><div class="dodgap"></div><span>  John Smith</span>
+                                                <h5><a class="magic-hover magic-hover__square" href="blog-details-2.html">Interview Photographer Mark 
+                                                    Seliger Agency</a></h5>
+                                                    <div>{testiMonialDetail.detail}</div>
+
                                         </div>
+                                    </div>
 
                                         )
                                     })
@@ -116,4 +114,4 @@ const testComp = () => {
     );
 };
 
-export default testComp;
+export default Artical;

@@ -3,6 +3,8 @@ import  sine  from "./img/sine.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 import Aos from 'aos';
+import NumberCounter from './page/NumberCounter';
+import SkillSection from './page/SkillSection';
 const About_Section = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -67,32 +69,26 @@ const About_Section = () => {
                         <div className="progress-data">
                             <p>{data.description}</p>
                             <img alt="sine" src={sine} />
-                            <div className="progress-bara-data">
+                            <div className="" style={{marginTop:"2rem"}}>
                                 <div className="row">
                                     
 
                                 <div className="row">
-            {skill.map((bar, index) => (
-                <div className="col-lg-6 col-md-6 col-sm-6" key={index}>
-                    <div className="home-one-progress">
-                        <div className="count-time">
-                            <h2 className="timer count-title count-number" to={bar.percentage} data-speed="2000">{bar.percentage}</h2><span>%</span>
-                        </div>
-                        <h5>{bar.name}</h5>
-                        <div className="meter cadetblue">
-                            <span data-progress={bar.percentage} style={{ width:`${bar.percentage}` }}></span>
-                        </div>
-                    </div>
-                </div>
-            ))}
+                                <img alt="about-img" src="https://via.placeholder.com/628x410" style={{borderRadius :"20px"}} />
         </div>
-    );
+   
 
                                 </div>
                             </div>
                         </div>
                     </div>
+                   
+              
                 </div>
+
+
+<SkillSection/>
+
             </div>
         </section>
     </div>

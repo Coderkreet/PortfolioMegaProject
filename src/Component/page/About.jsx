@@ -13,6 +13,7 @@ import "../css/responsive.css"
 import "../css/nice-select.css"
 import "../css/perfect-scrollbar.css"
 import { Col, Container, Row } from 'react-bootstrap';
+import Testimonials from '../Testimonials';
 
 const about = () => {
   
@@ -49,37 +50,7 @@ const about = () => {
 <About_Section/>
 <REsumeSection/>
 
-<div className="clients-data">
-            <Container>
-                <Row className="client-logo">
-                    <Col lg={3} className="item">
-                        <div className="clients-color">
-                            <img alt="clients" src="https://via.placeholder.com/278x128" />
-                        </div>
-                    </Col>
-                    <Col lg={3} className="item">
-                        <div className="clients-color">
-                            <img alt="clients" src="https://via.placeholder.com/278x128" />
-                        </div>
-                    </Col>
-                    <Col lg={3} className="item">
-                        <div className="clients-color">
-                            <img alt="clients" src="https://via.placeholder.com/278x128" />
-                        </div>
-                    </Col>
-                    <Col lg={3} className="item">
-                        <div className="clients-color">
-                            <img alt="clients" src="https://via.placeholder.com/278x128" />
-                        </div>
-                    </Col>
-                    <Col lg={3} className="item">
-                        <div className="clients-color">
-                            <img alt="clients" src="https://via.placeholder.com/278x128" />
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+<Testimonials/>
 
 <FooterSection/>
     </div>

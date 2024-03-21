@@ -110,7 +110,7 @@ const Testimonials = () => {
                                     testimonials.map(testiMonialDetail => {
                                         return (
                                             // <TestimonialsDetails testiMonialDetail={testiMonialDetail} key={testiMonialDetail._key} />
-                                            <div class="item">
+                                            <div class="item" style={{width :"400px" }}>
                                             <div class="shadow-effect">
                                                 <img class="img-circle" src={testiMonialDetail.image.url} />
                                                 <p>{testiMonialDetail.review}</p>

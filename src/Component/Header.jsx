@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header className="two three" id="stickyHeader">
+        <header className="two three slideup" id="stickyHeader">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-xl-2">
@@ -44,8 +44,9 @@ const Header = () => {
                        <li><Link className="magic-hover magic-hover__square" to="/">Home 1</Link></li>
                         <li><Link className="magic-hover magic-hover__square" to="/Home_2">Home 2</Link></li>
                         <li><Link className="magic-hover magic-hover__square" to="/Home_3">Home 3</Link></li>
-                        <li><Link className="magic-hover magic-hover__square" to=" ">Home 4 ( Light )</Link></li>
+                        <li><Link className="magic-hover magic-hover__square" to="/Home_4">Home 4 ( Light )</Link></li>
                         <li><Link className="magic-hover magic-hover__square" to=" ">Home 4 ( Dark )</Link></li>
+                        <li><Link className="magic-hover magic-hover__square" to="/test">test</Link></li>
                     </ul>
                 </li>
                 <li className="menu-item-has-children">
