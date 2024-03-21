@@ -4,8 +4,14 @@ import OrixLogo from "../img/orix-logo.png"
 import OrixLogoblak from "../img/logo-black.png"
 import  dots  from "../img/dots.png";
 import  quote_1  from "../img/quote-1.png";
+import { ToggleButton } from 'react-bootstrap';
 
-
+// import "../css/anitabs.css"
+// import "../css/style.css"
+// import "../css/color.css"
+// import "../css/responsive.css"
+// import "../css/nice-select.css"
+// import "../css/perfect-scrollbar.css"
 
 const Home_4 = () => {
 
@@ -13,12 +19,49 @@ const [About , setAbout] = useState(false);
 const [Experience , setExperience] = useState(false);
 const [Home , setHome] = useState(true);
 
-const toggleAbout = () => {
-  setAbout(!About);
+const [ togglebutton , Settogglebutton] = useState(
+
+  {
+    Home : true,
+  
+    About : false,
+    
+    Experience : false,
+    Portfolio : false,
+    News : false,
+    Contact : false,
+  }
+)
+
+const toggleFunc = (val) => {
+  const updatedToggleButton = { ...togglebutton }; // Create a copy of the togglebutton object
+
+  for (const key in updatedToggleButton) {
+    // Iterate over the keys of the object
+    if (key === val) {
+      // If the key matches the provided val, set its value to true
+      updatedToggleButton[key] = true;
+    } else {
+      // Otherwise, set its value to false
+      updatedToggleButton[key] = false;
+    }
+  }
+
+  Settogglebutton(updatedToggleButton); // Update the state with the modified object
 };
-const togglehome = () => {
-  setHome(!Home);
-};
+
+
+
+// console.log(ToggleButton)
+
+// const toggleAbout = () => {
+//   setAbout(true);
+//   setHome(false);
+// };
+// const togglehome = () => {
+//   setHome(true);
+//   setAbout(false);
+// };
 const toggleExperience = () => {
   setExperience(!Experience);
 };
@@ -36,7 +79,7 @@ const toggleExperience = () => {
       </div>
       <div className="tabs-nav js-tabs-nav" style={{top : "-60px"}} id="fade-example">
         <ul className="menu-item main-menu tabs-nav__list">
-          <li onClick={togglehome} className="active tabs-nav__item js-tabs-item">
+          <li onClick={()=>{toggleFunc("Home")}} className="active tabs-nav__item js-tabs-item">
             <a
               
               className="tabs-nav__link js-tabs-link magic-hover magic-hover__square"
@@ -45,7 +88,7 @@ const toggleExperience = () => {
               <span>Home</span>
             </a>
           </li>
-          <li onClick={toggleAbout} className="tabs-nav__item js-tabs-item">
+          <li onClick={()=>{toggleFunc("About")}} className="tabs-nav__item js-tabs-item">
             <a
               
               className="tabs-nav__link js-tabs-link magic-hover magic-hover__square"
@@ -54,7 +97,7 @@ const toggleExperience = () => {
               <span>About Me</span>
             </a>
           </li>
-          <li onClick={toggleExperience}  className="tabs-nav__item js-tabs-item">
+          <li  onClick={()=>{toggleFunc("Experience")}} className="tabs-nav__item js-tabs-item">
             <a
               
               className="tabs-nav__link js-tabs-link magic-hover magic-hover__square"
@@ -63,7 +106,7 @@ const toggleExperience = () => {
               <span>Experience</span>
             </a>
           </li>
-          <li onClick={toggleExperience} className="tabs-nav__item js-tabs-item">
+          <li onClick={()=>{toggleFunc("Portfolio")}} className="tabs-nav__item js-tabs-item">
             <a
               
               className="tabs-nav__link js-tabs-link magic-hover magic-hover__square"
@@ -72,7 +115,7 @@ const toggleExperience = () => {
               <span>Portfolio</span>
             </a>
           </li>
-          <li className="tabs-nav__item js-tabs-item">
+          <li onClick={()=>{toggleFunc("News")}} className="tabs-nav__item js-tabs-item">
             <a
               
               className="tabs-nav__link js-tabs-link magic-hover magic-hover__square"
@@ -81,7 +124,7 @@ const toggleExperience = () => {
               <span>News</span>
             </a>
           </li>
-          <li className="tabs-nav__item js-tabs-item">
+          <li onClick={()=>{toggleFunc("Contact")}} className="tabs-nav__item js-tabs-item">
             <a
               
               className="tabs-nav__link js-tabs-link magic-hover magic-hover__square"
@@ -211,8 +254,8 @@ const toggleExperience = () => {
       <div className="row">
         <div className="col-lg-8" />
         <div className="col-lg-4">
-          <div className="user-info">
-            <img alt="profile" src="https://via.placeholder.com/247x296" />
+          <div className="user-info" style={{height:"45rem"}} >
+            <img alt="profile" src="https://via.placeholder.com/247x296" style={{width:"296px" , height:"247px", padding:"5px"}}/>
             <h3>Willimes Parker</h3>
             <p>Graphic Designer, HTML Coder, and Project Manager</p>
             <a
@@ -250,10 +293,10 @@ const toggleExperience = () => {
       </div>
     </div>
   </section>
-  <div className="content-area tabs-content js-tabs-wrap">
+  <div className="content-area tabs-content js-tabs-wrap" style={{height:"auto"}}>
     <section
       id="tab-1"
-      className={`profile-info tab js-tabs-content ${Home ? "active" :""}`}
+      className={`profile-info tab js-tabs-content ${togglebutton.Home ? "active" :""}`}
       style={{ backgroundImage: "url(./img/background.png)" }}
     >
       <div className="container">
@@ -282,7 +325,7 @@ const toggleExperience = () => {
         </div>
       </div>
     </section>
-    <section id="tab-2" className={`gap about-me tab js-tabs-content ${ About ? "active" : ""}`}>
+    <section id="tab-2" className={`gap about-me tab js-tabs-content ${togglebutton.About ? "active" :""}`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-12">
@@ -708,7 +751,7 @@ const toggleExperience = () => {
         </div>
       </div>
     </section>
-    <section id="tab-3" className={`gap Experience tab js-tabs-content  ${Experience ? "active" : ""}`}>
+    <section id="tab-3" className={`gap Experience tab js-tabs-content ${togglebutton.Experience ? "active" :""} `}>
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-12">
@@ -818,7 +861,7 @@ const toggleExperience = () => {
         </div>
       </div>
     </section>
-    <section id="tab-4" className={`gap portfolio tab js-tabs-content  ${Experience ? "": "active"}`}>
+    <section id="tab-4" className={`gap portfolio tab js-tabs-content ${togglebutton.Portfolio ? "active" :""} `}>
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-12">
@@ -1025,7 +1068,7 @@ const toggleExperience = () => {
         </div>
       </div>
     </section>
-    <section id="tab-5" className="gap news tab js-tabs-content">
+    <section id="tab-5" className={`gap news tab js-tabs-content ${togglebutton.News ? "active" :""}`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-12">
@@ -1143,7 +1186,7 @@ const toggleExperience = () => {
         </div>
       </div>
     </section>
-    <section id="tab-6" className="gap contact tab js-tabs-content">
+    <section id="tab-6" className={`gap contact tab js-tabs-content ${togglebutton.Contact ? "active":""}`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-12">
@@ -1163,7 +1206,7 @@ const toggleExperience = () => {
                     href="callto:+1234483060"
                   >
                     1234483060
-                  </a>
+                  </a> <br />
                   <a className="mail" href="mailto:username@domainname.com">
                     username@domainname.com
                   </a>
