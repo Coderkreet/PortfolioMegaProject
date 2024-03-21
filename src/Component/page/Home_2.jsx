@@ -304,19 +304,19 @@ const Home_2 = () => {
             </Link>
           </li>
           <li>
-            <Link className="magic-hover magic-hover__square" to="Home_2">
+            <Link className="magic-hover magic-hover__square" to="/Home_3">
               Home 3
             </Link>
           </li>
           <li>
-            <Link className="magic-hover magic-hover__square" to="Home_3">
+            <Link className="magic-hover magic-hover__square" to="/Home_4">
               Home 4 ( Light )
             </Link>
           </li>
           <li>
             <a
               className="magic-hover magic-hover__square"
-              href="index-4-dark.html"
+              href="/"
             >
               Home 4 ( Dark )
             </a>
@@ -324,9 +324,9 @@ const Home_2 = () => {
         </ul>
       </li>
       <li>
-        <a className="magic-hover magic-hover__square" href="about.html">
+        <Link className="magic-hover magic-hover__square" to="/About">
           <i className="icon-user" /> About
-        </a>
+        </Link>
       </li>
       <li className={`menu-item-has-children ${isPortfolio ? 'active' : ''}`} onClick={togglrPortfolio}>
         <a
@@ -337,94 +337,96 @@ const Home_2 = () => {
         </a>
         <ul className="sub-menu">
           <li>
-            <a
+            <Link
               className="magic-hover magic-hover__square"
-              href="portfolio-details-1.html"
+              
+              to="Portfolio_1"
             >
               Portfolio Details 1
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="magic-hover magic-hover__square"
-              href="portfolio-details-2.html"
+              to="Portfolio_2"
             >
               Portfolio Details 2
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="magic-hover magic-hover__square"
-              href="portfolio-details-3.html"
+
+              href="Portfolio_3"
             >
               Portfolio Details 3
-            </a>
+            </Link>
           </li>
         </ul>
       </li>
       <li className={`menu-item-has-children ${isBlog ? 'active' : ''}`} onClick={toggleBlog} >
-        <a
+        <Link
           className="magic-hover magic-hover__square"
           href="JavaScript:void(0)"
         >
           <i className="icon-layers" />
           Blog
-        </a>
+        </Link>
         <ul className="sub-menu">
           <li>
-            <a className="magic-hover magic-hover__square" href="our-blog.html">
+            <Link className="magic-hover magic-hover__square" to="/OurBlog">
               Our Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="magic-hover magic-hover__square"
-              href="blog-details-1.html"
+              to="/BlogDetails_1"
             >
               Blog Details 1
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="magic-hover magic-hover__square"
-              href="blog-details-2.html"
+              to="/BlogDetails_2"
             >
               Blog Details 2
-            </a>
+            </Link>
           </li>
         </ul>
       </li>
       <li className={`menu-item-has-children ${isPages ? 'active' : ''}`} onClick={togglePages} >
-        <a
+        <Link
           className="magic-hover magic-hover__square"
           href="JavaScript:void(0)"
         >
           <i className="icon-folder" /> Pages
-        </a>
+        </Link>
         <ul className="sub-menu">
           <li>
-            <a className="magic-hover magic-hover__square" href="services.html">
+            <Link className="magic-hover magic-hover__square" to="/Services">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="magic-hover magic-hover__square"
-              href="services-details.html"
+              to ="/Services_Details"
             >
               Services Details
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="magic-hover magic-hover__square"
-              href="pricing-plans.html"
+              to="/PricingPlans"
             >
               Pricing Plans
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="magic-hover magic-hover__square" href="404.html">
+            <a className="magic-hover magic-hover__square" href="work">
               404
             </a>
           </li>
