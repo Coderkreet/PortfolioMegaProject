@@ -9,9 +9,6 @@ import OrixLogo from "../img/orix-logo.png"
 import OrixLogoblak from "../img/black-logo.png"
 
 
-
-
-
 // css file 
 import "../css/anitabs.css"
 import "../css/style.css"

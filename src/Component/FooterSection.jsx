@@ -1,5 +1,12 @@
 import React from 'react';
 
+import "./css/anitabs.css"
+import "./css/style.css"
+import "./css/color.css"
+import "./css/responsive.css"
+import "./css/nice-select.css"
+import "./css/perfect-scrollbar.css"
+
 import orixLogo from './img/logo.png';
 import { FaFacebookF, FaLinkedin, FaTwitter, FaVimeo } from 'react-icons/fa';
 
